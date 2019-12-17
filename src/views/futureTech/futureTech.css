@@ -1,0 +1,41 @@
+.futureTech {
+  background: #333;
+}
+
+.futureTech .futureTechTitle {
+  color: #c2c2c2;
+}
+
+.futureTech .futureTechTitle p {
+  margin: 0;
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.futureTech .productWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.futureTech .productImg {
+  width: 580px;
+  height: 580px;
+  margin: 0 auto 20px;
+}
+
+.futureTech .productImg img {
+  width: 580px;
+  height: 580px;
+}
+
+.futureTech .shadowContent {
+  display: none;
+}
+/*# sourceMappingURL=futureTech.css.map */

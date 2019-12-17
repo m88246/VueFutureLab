@@ -1,0 +1,48 @@
+.headerBox {
+  width: 100%;
+  position: relative;
+  background-color: #f3f2ed;
+  font-size: 24px;
+  height: 300px;
+  // .nav{
+  //     background-color: #fff;
+  //     border: 1px solid #000;
+  // }
+  .topHeader {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+    background-color: #000000;
+    padding: 0 0 0 10px;
+    color: #ffffff;
+    font-size: 16px;
+    div {
+        margin-right: 2.67vmin;
+    }
+  }
+}
+.nav{
+  display: flex;
+  color: #FFF;
+  padding-left: 2.67vmin;
+  align-items: center;
+  height: 5.5vmax;
+  a{
+      color: #FFF;
+      text-decoration: none;
+      margin-left: 2.67vmin;
+  }
+  .router-link-exact-active {
+      color: #8B8B8B;
+  }
+}
+.futureTech {
+  background: url(../../assets/img/001_2048x.jpg);
+}
+.futureLife {
+  background: url(../../assets/img/002_2048x.jpg);
+}
+.futureExperiments {
+  background: url(../../assets/img/003_2048x.webp);
+}

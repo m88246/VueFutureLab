@@ -1,0 +1,63 @@
+.headerBox {
+  width: 100%;
+  position: relative;
+  background-color: #f3f2ed;
+  font-size: 24px;
+  height: 300px;
+}
+
+.headerBox .topHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  background-color: #000000;
+  padding: 0 0 0 10px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.headerBox .topHeader div {
+  margin-right: 2.67vmin;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FFF;
+  padding-left: 2.67vmin;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5.5vmax;
+}
+
+.nav a {
+  color: #FFF;
+  text-decoration: none;
+  margin-left: 2.67vmin;
+}
+
+.nav .router-link-exact-active {
+  color: #8B8B8B;
+}
+
+.futureTech {
+  background: url(../../assets/img/001_2048x.jpg);
+}
+
+.futureLife {
+  background: url(../../assets/img/002_2048x.jpg);
+}
+
+.futureExperiments {
+  background: url(../../assets/img/003_2048x.webp);
+}
+/*# sourceMappingURL=Header.css.map */

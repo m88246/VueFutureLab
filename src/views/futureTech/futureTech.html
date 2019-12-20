@@ -5,30 +5,15 @@
         <p>什麼東西都可以與電子產品結合，讓你的生活更加便利！</p>
     </div>
     <div class="productWrap">
-        <div class="productImg">
+        <div class="productImg" v-for="item in techProduct">
             <img
-                src="../../assets/img/Nion_b318b8a7-5f14-48ef-9285-5f2a91f7d4b7_900x.gif"
+                :src="item.src"
                 alt="">
-            <div class="shadowContent"></div>
+            <div class="shadowContent">
+                <p>{{item.description}}</p>
+            </div>
         </div>
-        <div class="productImg">
-            <img
-                src="../../assets/img/82cd3049e307212d5540a6bc77c1ec9a_3fcec045-aa6c-4f12-a5f0-f1e3177c567f_400x.gif"
-                alt="">
-            <div class="shadowContent"></div>
-        </div>
-        <div class="productImg">
-            <img
-                src="../../assets/img/94ee1e779bae8dc96b1473e058adc3dc_900x.gif"
-                alt="">
-        </div>
-        <div class="productImg">
-            <img
-                src="../../assets/img/PlasmaClock_711d328b-00ea-49f8-91a0-aa3c97f825f0_900x.gif"
-                alt="">
-        </div>
-
     </div>
 
-
+    <scrollTop />
 </div>

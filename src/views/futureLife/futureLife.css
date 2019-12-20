@@ -1,12 +1,12 @@
-.futureTech {
+.futureLife {
   background: #333;
 }
 
-.futureTech .futureTechTitle {
+.futureLife .futureLifeTitle {
   color: #c2c2c2;
 }
 
-.futureTech .futureTechTitle p {
+.futureLife .futureLifeTitle p {
   margin: 0;
   padding: 10px 0;
   font-weight: bold;
@@ -14,7 +14,7 @@
   line-height: 16px;
 }
 
-.futureTech .productWrap {
+.futureLife .productWrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,7 +24,7 @@
   margin: 0 auto;
 }
 
-.futureTech .productImg {
+.futureLife .productImg {
   position: relative;
   width: 580px;
   height: 580px;
@@ -32,16 +32,16 @@
   cursor: pointer;
 }
 
-.futureTech .productImg img {
+.futureLife .productImg img {
   width: 580px;
   height: 580px;
 }
 
-.futureTech .productImg:hover .shadowContent {
+.futureLife .productImg:hover .shadowContent {
   opacity: 1;
 }
 
-.futureTech .shadowContent {
+.futureLife .shadowContent {
   position: absolute;
   left: 0;
   right: 0;
@@ -64,7 +64,7 @@
           align-items: center;
 }
 
-.futureTech .shadowContent p {
+.futureLife .shadowContent p {
   color: #fff;
 }
-/*# sourceMappingURL=futureTech.css.map */
+/*# sourceMappingURL=futureLife.css.map */

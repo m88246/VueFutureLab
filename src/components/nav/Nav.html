@@ -1,5 +1,5 @@
 <div class="nav">
-    <div class="logo" @click="childClick ()">LOGO</div>
+    <router-link class="logo" to="/">LOGO</router-link>
     <router-link v-for="item in navList" :to="item.url">{{item.title}}</router-link>
     <!-- <router-link  v-for="item in navList" :to="item.url" @click.native="routerSite()">{{item.title}}</router-link> -->
 </div>

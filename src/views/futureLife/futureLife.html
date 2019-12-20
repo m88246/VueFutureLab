@@ -1,0 +1,17 @@
+<div class="futureLife">
+    <div class="futureLifeTitle">
+        <p>每天辛苦工作，就只為了能過更好的生活品質</p>
+        <p>希望能享受人生更多的樂趣</p>
+        <p>「未來生活」給你帶來全新的體驗！</p>
+    </div>
+    <div class="productWrap">
+        <div class="productImg" v-for="item in techProduct">
+            <img :src="item.src" alt="">
+            <div class="shadowContent">
+                <p>{{item.description}}</p>
+            </div>
+        </div>
+    </div>
+
+    <scrollTop />
+    </div>

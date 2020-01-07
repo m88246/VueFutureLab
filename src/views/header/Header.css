@@ -26,6 +26,10 @@
   margin-right: 2.67vmin;
 }
 
+.headerBox .shopCar:hover .shoppingCar {
+  display: block;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;

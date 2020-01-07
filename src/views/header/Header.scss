@@ -20,6 +20,9 @@
         margin-right: 2.67vmin;
     }
   }
+  .shopCar:hover .shoppingCar {
+    display: block;
+  }
 }
 .nav{
   display: flex;

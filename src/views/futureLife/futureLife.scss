@@ -13,18 +13,17 @@
   .productWrap {
     display: flex;
     flex-wrap: wrap;
-    width: 1180px;
+    width: 95%;
     margin: 0 auto;
   }
   .productImg {
+    width: calc(100%/2 - 20px);
+    height: auto;
     position: relative;
-    width: 580px;
-    height: 580px;
     margin: 0 auto 20px;
     cursor: pointer;
     img {
-      width: 580px;
-      height: 580px;
+      width: 100%;
     }
   }
   .productImg:hover .shadowContent {
@@ -36,8 +35,6 @@
     right: 0;
     top: 0;
     bottom: 0;
-    width: 580px;
-    height: 580px;
     background-color: rgba(0, 0, 0, 0.7);
     opacity: 0;
     -webkit-transition: opacity 0.5s linear;

@@ -3,9 +3,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 300px;
-    min-height: 300px;
-    background: #666;
+    cursor: pointer;
     -webkit-transition: opacity 0.5s linear;
     -moz-transition: opacity 0.5s linear;
     -o-transition: opacity 0.5s linear;
@@ -16,4 +14,8 @@
 }
 .shoppingCar:hover .shopCarWrap {
   opacity: 1;
+  width: 300px;
+  min-height: 300px;
+  background: #666;
+  cursor: default;
 }

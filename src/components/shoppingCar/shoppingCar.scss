@@ -1,9 +1,11 @@
 .shoppingCar {
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
   .shopCarWrap {
     position: absolute;
     top: 0;
     right: 0;
-    cursor: pointer;
     -webkit-transition: opacity 0.5s linear;
     -moz-transition: opacity 0.5s linear;
     -o-transition: opacity 0.5s linear;
@@ -18,4 +20,5 @@
   min-height: 300px;
   background: #666;
   cursor: default;
+  top: 40px;
 }

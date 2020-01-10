@@ -1,50 +1,56 @@
+@mixin backgroundurl($i) {
+  background: url($i) no-repeat 0 50%;
+}
+
 .headerBox {
   width: 100%;
   position: relative;
   font-size: 24px;
-  height: 300px;
-  // .nav{
-  //     background-color: #fff;
-  //     border: 1px solid #000;
-  // }
+  height: 25.98vmax;
   .topHeader {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 40px;
-    background-color: #000000;
+    background-color: #000;
     padding: 0 0 0 10px;
-    color: #ffffff;
+    color: #fff;
     font-size: 16px;
     div {
-        margin-right: 2.67vmin;
+      margin-right: 2.67vmin;
     }
   }
-  .shopCar:hover .shoppingCar {
-    display: block;
-  }
 }
-.nav{
+.nav {
   display: flex;
-  color: #FFF;
+  color: #fff;
   padding-left: 2.67vmin;
   align-items: center;
   height: 5.5vmax;
-  a{
-      color: #FFF;
-      text-decoration: none;
-      margin-left: 2.67vmin;
+  a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 2.67vmin;
   }
   .router-link-exact-active {
-      color: #8B8B8B;
+    color: #8b8b8b;
   }
 }
+@media screen and (max-width: 560px) {
+  .headerBox {
+    font-size: 16px;
+  }
+}
+
 .futureTech {
-  background: url(../../assets/img/001_2048x.jpg);
+  @include backgroundurl("../../assets/img/001_2048x.jpg");
+  // background: url(../../assets/img/001_2048x.jpg);
 }
 .futureLife {
-  background: url(../../assets/img/002_2048x.jpg);
+  @include backgroundurl("../../assets/img/002_2048x.jpg");
+  // background: url(../../assets/img/002_2048x.jpg);
 }
 .futureExperiments {
-  background: url(../../assets/img/003_2048x.webp);
+  @include backgroundurl("../../assets/img/003_2048x.webp");
+  // background: url(../../assets/img/003_2048x.webp);
 }

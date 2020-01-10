@@ -26,6 +26,10 @@
   margin-right: 2.67vmin;
 }
 
+.headerBox .topHeader .signIn {
+  cursor: pointer;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,13 +60,16 @@
 
 .futureTech {
   background: url("../../assets/img/001_2048x.jpg") no-repeat 0 50%;
+  background-size: cover;
 }
 
 .futureLife {
   background: url("../../assets/img/002_2048x.jpg") no-repeat 0 50%;
+  background-size: cover;
 }
 
 .futureExperiments {
   background: url("../../assets/img/003_2048x.webp") no-repeat 0 50%;
+  background-size: cover;
 }
 /*# sourceMappingURL=Header.css.map */

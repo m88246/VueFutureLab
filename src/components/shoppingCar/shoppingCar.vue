@@ -34,4 +34,4 @@ export default {
   }
 };
 </script>
-<style src="./shoppingCar.css"></style>
+<style src="./shoppingCar.css" scoped></style>

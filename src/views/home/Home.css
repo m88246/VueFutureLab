@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .homeBox {
-  font-size: 24px;
+  font-size: 0;
   background-color: #000;
 }
 
@@ -13,15 +13,16 @@
 }
 
 .homeBox .slider {
-  width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
-  overflow: hidden;
-  list-style: none;
-  padding: 0;
-  z-index: 1;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .homeBox .slider button {
@@ -38,24 +39,68 @@
 
 .homeBox .slider_list {
   position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
   width: 100%;
-  height: 100%;
-  z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  padding-top: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .homeBox .slider_list img {
   width: 100%;
   height: 100%;
-  position: relative;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.homeBox .slider_prev,
+.homeBox .slider_next {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+}
+
+.homeBox .slider_prev {
+  left: 0;
+}
+
+.homeBox .slider_next {
+  right: 0;
+}
+
+.homeBox .slider_prev:before {
+  content: "◂";
+}
+
+.homeBox .slider_next:before {
+  content: "▸";
+}
+
+.homeBox .slider_prev:before,
+.homeBox .slider_next:before {
+  font-size: 20px;
+  line-height: 1;
+  color: black;
+  opacity: 0.25;
+}
+
+.homeBox .slider_prev:hover:before,
+.homeBox .slider_next:hover:before {
+  opacity: 1;
+}
+
+.homeBox .slider_dots {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0;
+  text-align: center;
 }
 
 .homeBox .slider_dots > li {

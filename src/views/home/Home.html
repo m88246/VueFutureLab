@@ -3,8 +3,20 @@
         <video class="video-boxContent" id="video-boxContent" controls autoplay
             playsinline="true" loop="" muted=""
             webkit-playsinline="true" src="../../assets/video/test.mp4">
-            <!-- <source id="video-url" src="" type="video/mp4 "> -->
             Your browser does not support HTML5 video.
         </video>
+    </div>
+    <div class="slider">
+        <transition-group tag="div" name="fade" class="slider_list">
+            <img v-for="(src,index) in imgList" :key="src" :src="src" v-show="index ===active">
+        </transition-group>
+        <button class="slider_prev" @click="change(active-1)">prev</button>
+        <button class="slider_next" @click="change(active+1)">next</button>
+        <ul class="slider_dots">
+            <li v-for="(src,index) in imgList" :class="{active :index === active}"  @click="change(index)">
+                <button>{{index}}</button>
+            </li>
+        </ul>
+
     </div>
 </div>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .homeBox {
   font-size: 24px;
   background-color: #000;
@@ -5,5 +6,95 @@
 
 .homeBox video {
   width: 100%;
+}
+
+.homeBox .active {
+  color: #000;
+}
+
+.homeBox .slider {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+.homeBox .slider button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.homeBox .slider_list {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.homeBox .slider_list img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.homeBox .slider_dots > li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.homeBox .slider_dots > li > button:before {
+  font-size: 20px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  text-align: center;
+  opacity: 0.25;
+  color: #fff;
+}
+
+.homeBox .slider_dots > li > button:hover:before,
+.homeBox .slider_dots > li.active > button:before {
+  opacity: 1;
+}
+
+.homeBox .fade-enter-active,
+.homeBox .fade-leave-active {
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.homeBox .fade-enter,
+.homeBox .fade-leave-to {
+  opacity: 0;
 }
 /*# sourceMappingURL=Home.css.map */

@@ -10,7 +10,7 @@ export default {
       navList: [
         { title: "未來科技", url: "/futureTech", imgClass: "futureTech" },
         { title: "未來生活", url: "/futureLife", imgClass: "futureLife" },
-        { title: "未來實驗", url: "/", imgClass: "futureExperiments" }
+        { title: "未來實驗", url: "/futureExperiments", imgClass: "futureExperiments" }
       ]
     };
   },
@@ -20,17 +20,18 @@ export default {
       switch (this.$route.name) {
         case "futureTech":
           this.$emit("childByValue", this.navList[0].imgClass);
-          console.log(this.navList[0].imgClass);
           break;
         case "futureLife":
           this.$emit("childByValue", this.navList[1].imgClass);
-          console.log(this.navList[1].imgClass);
+          break;
+        case "futureExperiments":
+          this.$emit("childByValue", this.navList[2].imgClass);
+          break;
+        default :
+          this.$emit("childByValue", this.navList[0].imgClass);
           break;
       }
     }
-  },
-  methods: {
-    click() {}
   }
 };
 </script>

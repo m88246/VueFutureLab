@@ -5,6 +5,7 @@ export default {
     data() {
         return {
             active:0,
+            timer:0,
             imgList:[
                 require("@/assets/img/banner1.webp"),
                 require("@/assets/img/banner2.webp"),
@@ -22,7 +23,12 @@ export default {
         change(index) {
             this.active = (index + this.total) % this.total
         }
-    }
+    },
+    created() {
+        this.timer = setInterval(()=>{
+            this.active = (this.active+1)% this.total
+        },5000)
+  }
     
 }
 </script>

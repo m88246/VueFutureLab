@@ -23,7 +23,6 @@ export default {
   methods:{
     childByValue(childValue){
       this.imgclass = childValue
-      console.log(this.imgclass)
     }
   }
 };

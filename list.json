@@ -1,0 +1,26 @@
+[
+    {
+      "productName": "城市啞鈴組",
+      "price": "9999",
+      "src": "require('@/assets/img/porduct005.gif')",
+      "quantity": "0"
+    },
+    {
+      "productName": "原動力強化器",
+      "price": "8888",
+      "src": "require('@/assets/img/porduct006.gif')",
+      "quantity": "0"
+    },
+    {
+      "productName": "零負重變型包",
+      "price": "7777",
+      "src": "require('@/assets/img/porduct007.gif')",
+      "quantity": "0"
+    },
+    {
+      "productName": "零負重背帶",
+      "price": "6666",
+      "src": "require('@/assets/img/porduct008.gif')",
+      "quantity": "0"
+    }
+  ]
